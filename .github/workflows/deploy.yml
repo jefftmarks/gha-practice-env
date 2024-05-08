@@ -8,6 +8,7 @@ env:
   MONGODB_DB_NAME: GHA
 jobs:
   test:
+    environment: test
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.uxnmrqi.mongodb.net
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
